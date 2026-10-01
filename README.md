@@ -6,7 +6,7 @@ Players can take turns playing X and O, with the game automatically detecting wi
 
 ## 🚀 Live Demo
 
-[Play Tic Tac Toe game](https://nadeemmanj.github.io/Tic-Tac-Toe/)
+[Play Tic Tac Toe game](https://nadeemmanj.github.io/Tic-Tac-Toe-Game/)
 
 ## 🛠️ Technologies
 
