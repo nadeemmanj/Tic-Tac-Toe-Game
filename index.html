@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A modern and responsive Tic Tac Toe game built with HTML, CSS and JavaScript."
+    >
+
+    <title>Tic Tac Toe | Nadeem</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-wrapper">
+
+        <!-- Header -->
+        <header class="game-header">
+            <p class="eyebrow">CLASSIC GAME</p>
+            <h1>Tic Tac Toe</h1>
+            <p class="subtitle">
+                Challenge your friend and get three in a row.
+            </p>
+        </header>
+
+
+        <!-- Score Board -->
+        <section class="score-board">
+
+            <div class="score-card player-x">
+                <span class="player-label">PLAYER X</span>
+                <span id="x-score" class="score">0</span>
+            </div>
+
+            <div class="vs">
+                VS
+            </div>
+
+            <div class="score-card player-o">
+                <span class="player-label">PLAYER O</span>
+                <span id="o-score" class="score">0</span>
+            </div>
+
+        </section>
+
+
+        <!-- Current Turn -->
+        <div class="turn-indicator">
+            <span id="turn-symbol">X</span>
+            <span id="turn-text">Player X's Turn</span>
+        </div>
+
+
+        <!-- Game Board -->
+        <section class="board-container">
+
+            <div class="board">
+
+                <button class="box" aria-label="Cell 1"></button>
+                <button class="box" aria-label="Cell 2"></button>
+                <button class="box" aria-label="Cell 3"></button>
+
+                <button class="box" aria-label="Cell 4"></button>
+                <button class="box" aria-label="Cell 5"></button>
+                <button class="box" aria-label="Cell 6"></button>
+
+                <button class="box" aria-label="Cell 7"></button>
+                <button class="box" aria-label="Cell 8"></button>
+                <button class="box" aria-label="Cell 9"></button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="reset-btn" type="button">
+                <span>↻</span>
+                Reset Game
+            </button>
+        </div>
+
+
+        <!-- Winner Modal -->
+        <div class="msg-container hide">
+
+            <div class="result-card">
+
+                <div class="trophy">🏆</div>
+
+                <p class="result-label">GAME OVER</p>
+
+                <h2 id="msg">
+                    Player X Wins!
+                </h2>
+
+                <p id="result-subtitle">
+                    Congratulations! Great game.
+                </p>
+
+                <button id="new-btn" type="button">
+                    Play Again
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
